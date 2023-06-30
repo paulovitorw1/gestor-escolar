@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6B3151A2A4CC1EF000FB3A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */; };
+		A6B3151C2A4CC1EF000FB3A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */; };
+		A6B315232A4CC1F0000FB3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B315222A4CC1F0000FB3A3 /* Assets.xcassets */; };
+		A6B315262A4CC1F0000FB3A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B315242A4CC1F0000FB3A3 /* LaunchScreen.storyboard */; };
+		A6B315312A4CC1F0000FB3A3 /* gestor_escolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315302A4CC1F0000FB3A3 /* gestor_escolarTests.swift */; };
+		A6B3153B2A4CC1F0000FB3A3 /* gestor_escolarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3153A2A4CC1F0000FB3A3 /* gestor_escolarUITests.swift */; };
+		A6B3153D2A4CC1F0000FB3A3 /* gestor_escolarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3153C2A4CC1F0000FB3A3 /* gestor_escolarUITestsLaunchTests.swift */; };
+		A6B3154B2A4CC2BD000FB3A3 /* MainCoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3154A2A4CC2BD000FB3A3 /* MainCoordinatorProtocols.swift */; };
+		A6B3154D2A4CC37C000FB3A3 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3154C2A4CC37C000FB3A3 /* MainCoordinator.swift */; };
+		A6B315552A4CC484000FB3A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315542A4CC484000FB3A3 /* HomeViewController.swift */; };
+		A6B315572A4CC4D4000FB3A3 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315562A4CC4D4000FB3A3 /* HomeProtocols.swift */; };
+		A6B315592A4CC618000FB3A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315582A4CC618000FB3A3 /* HomeView.swift */; };
+		A6B3155F2A4CC75A000FB3A3 /* DSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3155B2A4CC75A000FB3A3 /* DSColors.swift */; };
+		A6B315612A4CC75A000FB3A3 /* DSSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3155D2A4CC75A000FB3A3 /* DSSpacing.swift */; };
+		A6B315652A4CC826000FB3A3 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315642A4CC826000FB3A3 /* MenuCollectionViewCell.swift */; };
+		A6B315692A4CFF93000FB3A3 /* UIView+addShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315672A4CFF93000FB3A3 /* UIView+addShadow.swift */; };
+		A6B3156C2A4D023D000FB3A3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3156B2A4D023D000FB3A3 /* HomePresenter.swift */; };
+		A6B315702A4D02ED000FB3A3 /* AuthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3156F2A4D02ED000FB3A3 /* AuthProtocols.swift */; };
+		A6B315742A4D03B2000FB3A3 /* AuthUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315732A4D03B2000FB3A3 /* AuthUserModel.swift */; };
+		A6B315762A4D06B8000FB3A3 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315752A4D06B8000FB3A3 /* HomeService.swift */; };
+		A6B315782A4D2C17000FB3A3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315772A4D2C17000FB3A3 /* HomeViewModel.swift */; };
+		A6B3157B2A4DD0D0000FB3A3 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3157A2A4DD0D0000FB3A3 /* HomeHeaderView.swift */; };
+		A6B3157F2A4F0972000FB3A3 /* ClassroomServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3157D2A4F0972000FB3A3 /* ClassroomServiceProtocols.swift */; };
+		A6B315802A4F0972000FB3A3 /* ClassroomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3157E2A4F0972000FB3A3 /* ClassroomService.swift */; };
+		A6B3158A2A4F09AF000FB3A3 /* ClassroomsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315822A4F09AF000FB3A3 /* ClassroomsPresenter.swift */; };
+		A6B3158B2A4F09AF000FB3A3 /* ClassroomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315832A4F09AF000FB3A3 /* ClassroomsViewController.swift */; };
+		A6B3158C2A4F09AF000FB3A3 /* ClassroomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315862A4F09AF000FB3A3 /* ClassroomCollectionViewCell.swift */; };
+		A6B3158D2A4F09AF000FB3A3 /* ClassroomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315872A4F09AF000FB3A3 /* ClassroomsView.swift */; };
+		A6B3158E2A4F09AF000FB3A3 /* ClassroomsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315892A4F09AF000FB3A3 /* ClassroomsProtocols.swift */; };
+		A6B315932A4F268C000FB3A3 /* ClassroomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315922A4F268C000FB3A3 /* ClassroomModel.swift */; };
+		A6B315972A4F598A000FB3A3 /* ClassroomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315962A4F598A000FB3A3 /* ClassroomsViewModel.swift */; };
+		A6B3159A2A4F5A53000FB3A3 /* ClassroomModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315992A4F5A53000FB3A3 /* ClassroomModelAdapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6B3152D2A4CC1F0000FB3A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6B3150E2A4CC1EF000FB3A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6B315152A4CC1EF000FB3A3;
+			remoteInfo = "gestor-escolar";
+		};
+		A6B315372A4CC1F0000FB3A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6B3150E2A4CC1EF000FB3A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6B315152A4CC1EF000FB3A3;
+			remoteInfo = "gestor-escolar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6B315162A4CC1EF000FB3A3 /* gestor-escolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gestor-escolar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6B315222A4CC1F0000FB3A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6B315252A4CC1F0000FB3A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6B315272A4CC1F0000FB3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B3152C2A4CC1F0000FB3A3 /* gestor-escolarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gestor-escolarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B315302A4CC1F0000FB3A3 /* gestor_escolarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestor_escolarTests.swift; sourceTree = "<group>"; };
+		A6B315362A4CC1F0000FB3A3 /* gestor-escolarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gestor-escolarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B3153A2A4CC1F0000FB3A3 /* gestor_escolarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestor_escolarUITests.swift; sourceTree = "<group>"; };
+		A6B3153C2A4CC1F0000FB3A3 /* gestor_escolarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestor_escolarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6B3154A2A4CC2BD000FB3A3 /* MainCoordinatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorProtocols.swift; sourceTree = "<group>"; };
+		A6B3154C2A4CC37C000FB3A3 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A6B315542A4CC484000FB3A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A6B315562A4CC4D4000FB3A3 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		A6B315582A4CC618000FB3A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A6B3155B2A4CC75A000FB3A3 /* DSColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSColors.swift; sourceTree = "<group>"; };
+		A6B3155D2A4CC75A000FB3A3 /* DSSpacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSpacing.swift; sourceTree = "<group>"; };
+		A6B315642A4CC826000FB3A3 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6B315672A4CFF93000FB3A3 /* UIView+addShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+addShadow.swift"; sourceTree = "<group>"; };
+		A6B3156B2A4D023D000FB3A3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		A6B3156F2A4D02ED000FB3A3 /* AuthProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocols.swift; sourceTree = "<group>"; };
+		A6B315732A4D03B2000FB3A3 /* AuthUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserModel.swift; sourceTree = "<group>"; };
+		A6B315752A4D06B8000FB3A3 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		A6B315772A4D2C17000FB3A3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A6B3157A2A4DD0D0000FB3A3 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		A6B3157D2A4F0972000FB3A3 /* ClassroomServiceProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassroomServiceProtocols.swift; sourceTree = "<group>"; };
+		A6B3157E2A4F0972000FB3A3 /* ClassroomService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassroomService.swift; sourceTree = "<group>"; };
+		A6B315822A4F09AF000FB3A3 /* ClassroomsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassroomsPresenter.swift; sourceTree = "<group>"; };
+		A6B315832A4F09AF000FB3A3 /* ClassroomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassroomsViewController.swift; sourceTree = "<group>"; };
+		A6B315862A4F09AF000FB3A3 /* ClassroomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassroomCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6B315872A4F09AF000FB3A3 /* ClassroomsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassroomsView.swift; sourceTree = "<group>"; };
+		A6B315892A4F09AF000FB3A3 /* ClassroomsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassroomsProtocols.swift; sourceTree = "<group>"; };
+		A6B315922A4F268C000FB3A3 /* ClassroomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomModel.swift; sourceTree = "<group>"; };
+		A6B315962A4F598A000FB3A3 /* ClassroomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomsViewModel.swift; sourceTree = "<group>"; };
+		A6B315992A4F5A53000FB3A3 /* ClassroomModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomModelAdapter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6B315132A4CC1EF000FB3A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6B315292A4CC1F0000FB3A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6B315332A4CC1F0000FB3A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6B3150D2A4CC1EF000FB3A3 = {
+			isa = PBXGroup;
+			children = (
+				A6B315182A4CC1EF000FB3A3 /* gestor-escolar */,
+				A6B3152F2A4CC1F0000FB3A3 /* gestor-escolarTests */,
+				A6B315392A4CC1F0000FB3A3 /* gestor-escolarUITests */,
+				A6B315172A4CC1EF000FB3A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6B315172A4CC1EF000FB3A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315162A4CC1EF000FB3A3 /* gestor-escolar.app */,
+				A6B3152C2A4CC1F0000FB3A3 /* gestor-escolarTests.xctest */,
+				A6B315362A4CC1F0000FB3A3 /* gestor-escolarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6B315182A4CC1EF000FB3A3 /* gestor-escolar */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315492A4CC28C000FB3A3 /* Coordinator */,
+				A6B315712A4D0335000FB3A3 /* Models */,
+				A6B3156D2A4D0291000FB3A3 /* Services */,
+				A6B315662A4CFF93000FB3A3 /* Extensions */,
+				A6B3155A2A4CC75A000FB3A3 /* Utils */,
+				A6B3154E2A4CC3A6000FB3A3 /* Views */,
+				A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */,
+				A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */,
+				A6B315222A4CC1F0000FB3A3 /* Assets.xcassets */,
+				A6B315242A4CC1F0000FB3A3 /* LaunchScreen.storyboard */,
+				A6B315272A4CC1F0000FB3A3 /* Info.plist */,
+			);
+			path = "gestor-escolar";
+			sourceTree = "<group>";
+		};
+		A6B3152F2A4CC1F0000FB3A3 /* gestor-escolarTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315302A4CC1F0000FB3A3 /* gestor_escolarTests.swift */,
+			);
+			path = "gestor-escolarTests";
+			sourceTree = "<group>";
+		};
+		A6B315392A4CC1F0000FB3A3 /* gestor-escolarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6B3153A2A4CC1F0000FB3A3 /* gestor_escolarUITests.swift */,
+				A6B3153C2A4CC1F0000FB3A3 /* gestor_escolarUITestsLaunchTests.swift */,
+			);
+			path = "gestor-escolarUITests";
+			sourceTree = "<group>";
+		};
+		A6B315492A4CC28C000FB3A3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A6B3154A2A4CC2BD000FB3A3 /* MainCoordinatorProtocols.swift */,
+				A6B3154C2A4CC37C000FB3A3 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A6B3154E2A4CC3A6000FB3A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315812A4F09AF000FB3A3 /* Classrooms */,
+				A6B3154F2A4CC3B0000FB3A3 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6B3154F2A4CC3B0000FB3A3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315522A4CC3CF000FB3A3 /* Protocols */,
+				A6B315512A4CC3C6000FB3A3 /* ViewModel */,
+				A6B315532A4CC3D5000FB3A3 /* View */,
+				A6B315542A4CC484000FB3A3 /* HomeViewController.swift */,
+				A6B3156B2A4D023D000FB3A3 /* HomePresenter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A6B315512A4CC3C6000FB3A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315772A4D2C17000FB3A3 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6B315522A4CC3CF000FB3A3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315562A4CC4D4000FB3A3 /* HomeProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A6B315532A4CC3D5000FB3A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315792A4DD0AE000FB3A3 /* SubView */,
+				A6B315632A4CC7F3000FB3A3 /* Cells */,
+				A6B315582A4CC618000FB3A3 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6B3155A2A4CC75A000FB3A3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6B3155B2A4CC75A000FB3A3 /* DSColors.swift */,
+				A6B3155D2A4CC75A000FB3A3 /* DSSpacing.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A6B315632A4CC7F3000FB3A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315642A4CC826000FB3A3 /* MenuCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A6B315662A4CFF93000FB3A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315672A4CFF93000FB3A3 /* UIView+addShadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A6B3156D2A4D0291000FB3A3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A6B3157C2A4F0972000FB3A3 /* Classroom */,
+				A6B3156E2A4D029E000FB3A3 /* Auth */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A6B3156E2A4D029E000FB3A3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A6B3156F2A4D02ED000FB3A3 /* AuthProtocols.swift */,
+				A6B315752A4D06B8000FB3A3 /* HomeService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A6B315712A4D0335000FB3A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6B3158F2A4F265D000FB3A3 /* Classroom */,
+				A6B315722A4D0397000FB3A3 /* Auth */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6B315722A4D0397000FB3A3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315732A4D03B2000FB3A3 /* AuthUserModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A6B315792A4DD0AE000FB3A3 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				A6B3157A2A4DD0D0000FB3A3 /* HomeHeaderView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		A6B3157C2A4F0972000FB3A3 /* Classroom */ = {
+			isa = PBXGroup;
+			children = (
+				A6B3157D2A4F0972000FB3A3 /* ClassroomServiceProtocols.swift */,
+				A6B3157E2A4F0972000FB3A3 /* ClassroomService.swift */,
+			);
+			path = Classroom;
+			sourceTree = "<group>";
+		};
+		A6B315812A4F09AF000FB3A3 /* Classrooms */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315942A4F596F000FB3A3 /* ViewModel */,
+				A6B315822A4F09AF000FB3A3 /* ClassroomsPresenter.swift */,
+				A6B315832A4F09AF000FB3A3 /* ClassroomsViewController.swift */,
+				A6B315842A4F09AF000FB3A3 /* View */,
+				A6B315882A4F09AF000FB3A3 /* Protocols */,
+			);
+			path = Classrooms;
+			sourceTree = "<group>";
+		};
+		A6B315842A4F09AF000FB3A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315852A4F09AF000FB3A3 /* Cells */,
+				A6B315872A4F09AF000FB3A3 /* ClassroomsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6B315852A4F09AF000FB3A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315862A4F09AF000FB3A3 /* ClassroomCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A6B315882A4F09AF000FB3A3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315892A4F09AF000FB3A3 /* ClassroomsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A6B3158F2A4F265D000FB3A3 /* Classroom */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315922A4F268C000FB3A3 /* ClassroomModel.swift */,
+			);
+			path = Classroom;
+			sourceTree = "<group>";
+		};
+		A6B315942A4F596F000FB3A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6B315962A4F598A000FB3A3 /* ClassroomsViewModel.swift */,
+				A6B315992A4F5A53000FB3A3 /* ClassroomModelAdapter.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6B315152A4CC1EF000FB3A3 /* gestor-escolar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6B315402A4CC1F0000FB3A3 /* Build configuration list for PBXNativeTarget "gestor-escolar" */;
+			buildPhases = (
+				A6B315122A4CC1EF000FB3A3 /* Sources */,
+				A6B315132A4CC1EF000FB3A3 /* Frameworks */,
+				A6B315142A4CC1EF000FB3A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gestor-escolar";
+			productName = "gestor-escolar";
+			productReference = A6B315162A4CC1EF000FB3A3 /* gestor-escolar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6B3152B2A4CC1F0000FB3A3 /* gestor-escolarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6B315432A4CC1F0000FB3A3 /* Build configuration list for PBXNativeTarget "gestor-escolarTests" */;
+			buildPhases = (
+				A6B315282A4CC1F0000FB3A3 /* Sources */,
+				A6B315292A4CC1F0000FB3A3 /* Frameworks */,
+				A6B3152A2A4CC1F0000FB3A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6B3152E2A4CC1F0000FB3A3 /* PBXTargetDependency */,
+			);
+			name = "gestor-escolarTests";
+			productName = "gestor-escolarTests";
+			productReference = A6B3152C2A4CC1F0000FB3A3 /* gestor-escolarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6B315352A4CC1F0000FB3A3 /* gestor-escolarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6B315462A4CC1F0000FB3A3 /* Build configuration list for PBXNativeTarget "gestor-escolarUITests" */;
+			buildPhases = (
+				A6B315322A4CC1F0000FB3A3 /* Sources */,
+				A6B315332A4CC1F0000FB3A3 /* Frameworks */,
+				A6B315342A4CC1F0000FB3A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6B315382A4CC1F0000FB3A3 /* PBXTargetDependency */,
+			);
+			name = "gestor-escolarUITests";
+			productName = "gestor-escolarUITests";
+			productReference = A6B315362A4CC1F0000FB3A3 /* gestor-escolarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6B3150E2A4CC1EF000FB3A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A6B315152A4CC1EF000FB3A3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A6B3152B2A4CC1F0000FB3A3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A6B315152A4CC1EF000FB3A3;
+					};
+					A6B315352A4CC1F0000FB3A3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A6B315152A4CC1EF000FB3A3;
+					};
+				};
+			};
+			buildConfigurationList = A6B315112A4CC1EF000FB3A3 /* Build configuration list for PBXProject "gestor-escolar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6B3150D2A4CC1EF000FB3A3;
+			productRefGroup = A6B315172A4CC1EF000FB3A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6B315152A4CC1EF000FB3A3 /* gestor-escolar */,
+				A6B3152B2A4CC1F0000FB3A3 /* gestor-escolarTests */,
+				A6B315352A4CC1F0000FB3A3 /* gestor-escolarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6B315142A4CC1EF000FB3A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B315262A4CC1F0000FB3A3 /* LaunchScreen.storyboard in Resources */,
+				A6B315232A4CC1F0000FB3A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6B3152A2A4CC1F0000FB3A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6B315342A4CC1F0000FB3A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6B315122A4CC1EF000FB3A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B315552A4CC484000FB3A3 /* HomeViewController.swift in Sources */,
+				A6B3157F2A4F0972000FB3A3 /* ClassroomServiceProtocols.swift in Sources */,
+				A6B315592A4CC618000FB3A3 /* HomeView.swift in Sources */,
+				A6B3155F2A4CC75A000FB3A3 /* DSColors.swift in Sources */,
+				A6B315782A4D2C17000FB3A3 /* HomeViewModel.swift in Sources */,
+				A6B3156C2A4D023D000FB3A3 /* HomePresenter.swift in Sources */,
+				A6B315612A4CC75A000FB3A3 /* DSSpacing.swift in Sources */,
+				A6B3151A2A4CC1EF000FB3A3 /* AppDelegate.swift in Sources */,
+				A6B3151C2A4CC1EF000FB3A3 /* SceneDelegate.swift in Sources */,
+				A6B3159A2A4F5A53000FB3A3 /* ClassroomModelAdapter.swift in Sources */,
+				A6B3157B2A4DD0D0000FB3A3 /* HomeHeaderView.swift in Sources */,
+				A6B3154D2A4CC37C000FB3A3 /* MainCoordinator.swift in Sources */,
+				A6B315572A4CC4D4000FB3A3 /* HomeProtocols.swift in Sources */,
+				A6B315762A4D06B8000FB3A3 /* HomeService.swift in Sources */,
+				A6B315702A4D02ED000FB3A3 /* AuthProtocols.swift in Sources */,
+				A6B3158D2A4F09AF000FB3A3 /* ClassroomsView.swift in Sources */,
+				A6B315742A4D03B2000FB3A3 /* AuthUserModel.swift in Sources */,
+				A6B3154B2A4CC2BD000FB3A3 /* MainCoordinatorProtocols.swift in Sources */,
+				A6B3158B2A4F09AF000FB3A3 /* ClassroomsViewController.swift in Sources */,
+				A6B315802A4F0972000FB3A3 /* ClassroomService.swift in Sources */,
+				A6B3158C2A4F09AF000FB3A3 /* ClassroomCollectionViewCell.swift in Sources */,
+				A6B315972A4F598A000FB3A3 /* ClassroomsViewModel.swift in Sources */,
+				A6B315932A4F268C000FB3A3 /* ClassroomModel.swift in Sources */,
+				A6B315692A4CFF93000FB3A3 /* UIView+addShadow.swift in Sources */,
+				A6B3158A2A4F09AF000FB3A3 /* ClassroomsPresenter.swift in Sources */,
+				A6B315652A4CC826000FB3A3 /* MenuCollectionViewCell.swift in Sources */,
+				A6B3158E2A4F09AF000FB3A3 /* ClassroomsProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6B315282A4CC1F0000FB3A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B315312A4CC1F0000FB3A3 /* gestor_escolarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6B315322A4CC1F0000FB3A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B3153D2A4CC1F0000FB3A3 /* gestor_escolarUITestsLaunchTests.swift in Sources */,
+				A6B3153B2A4CC1F0000FB3A3 /* gestor_escolarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6B3152E2A4CC1F0000FB3A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6B315152A4CC1EF000FB3A3 /* gestor-escolar */;
+			targetProxy = A6B3152D2A4CC1F0000FB3A3 /* PBXContainerItemProxy */;
+		};
+		A6B315382A4CC1F0000FB3A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6B315152A4CC1EF000FB3A3 /* gestor-escolar */;
+			targetProxy = A6B315372A4CC1F0000FB3A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6B315242A4CC1F0000FB3A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6B315252A4CC1F0000FB3A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6B3153E2A4CC1F0000FB3A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6B3153F2A4CC1F0000FB3A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6B315412A4CC1F0000FB3A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gestor-escolar/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulo.gestor-escolar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6B315422A4CC1F0000FB3A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gestor-escolar/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulo.gestor-escolar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6B315442A4CC1F0000FB3A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulo.gestor-escolarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gestor-escolar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gestor-escolar";
+			};
+			name = Debug;
+		};
+		A6B315452A4CC1F0000FB3A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulo.gestor-escolarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gestor-escolar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gestor-escolar";
+			};
+			name = Release;
+		};
+		A6B315472A4CC1F0000FB3A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulo.gestor-escolarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "gestor-escolar";
+			};
+			name = Debug;
+		};
+		A6B315482A4CC1F0000FB3A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulo.gestor-escolarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "gestor-escolar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6B315112A4CC1EF000FB3A3 /* Build configuration list for PBXProject "gestor-escolar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B3153E2A4CC1F0000FB3A3 /* Debug */,
+				A6B3153F2A4CC1F0000FB3A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6B315402A4CC1F0000FB3A3 /* Build configuration list for PBXNativeTarget "gestor-escolar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B315412A4CC1F0000FB3A3 /* Debug */,
+				A6B315422A4CC1F0000FB3A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6B315432A4CC1F0000FB3A3 /* Build configuration list for PBXNativeTarget "gestor-escolarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B315442A4CC1F0000FB3A3 /* Debug */,
+				A6B315452A4CC1F0000FB3A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6B315462A4CC1F0000FB3A3 /* Build configuration list for PBXNativeTarget "gestor-escolarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B315472A4CC1F0000FB3A3 /* Debug */,
+				A6B315482A4CC1F0000FB3A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6B3150E2A4CC1EF000FB3A3 /* Project object */;
+}
