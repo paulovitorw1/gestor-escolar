@@ -17,6 +17,14 @@
 		A69E0F672A531B7A00EED1B7 /* ListProgramContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F662A531B7A00EED1B7 /* ListProgramContentModel.swift */; };
 		A69E0F6A2A53211100EED1B7 /* ListProgramContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F692A53211100EED1B7 /* ListProgramContentViewModel.swift */; };
 		A69E0F6D2A53227D00EED1B7 /* ListProgramContentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F6C2A53227D00EED1B7 /* ListProgramContentAdapter.swift */; };
+		A69E0F6F2A53355A00EED1B7 /* ClassroomForProgramContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F6E2A53355A00EED1B7 /* ClassroomForProgramContentViewModel.swift */; };
+		A69E0F762A5340DC00EED1B7 /* ProgramContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F752A5340DC00EED1B7 /* ProgramContentViewController.swift */; };
+		A69E0F782A5340EF00EED1B7 /* ProgramContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F772A5340EF00EED1B7 /* ProgramContentView.swift */; };
+		A69E0F7C2A53414E00EED1B7 /* ProgramContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F7B2A53414E00EED1B7 /* ProgramContentPresenter.swift */; };
+		A69E0F7E2A53415800EED1B7 /* ProgramContentProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F7D2A53415800EED1B7 /* ProgramContentProtocols.swift */; };
+		A69E0F812A537E6000EED1B7 /* ProgramContentServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F802A537E6000EED1B7 /* ProgramContentServiceProtocols.swift */; };
+		A69E0F832A537F1E00EED1B7 /* ProgramContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F822A537F1E00EED1B7 /* ProgramContentService.swift */; };
+		A69E0F852A5382AE00EED1B7 /* ProgramContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F842A5382AE00EED1B7 /* ProgramContentModel.swift */; };
 		A6B3151A2A4CC1EF000FB3A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */; };
 		A6B3151C2A4CC1EF000FB3A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */; };
 		A6B315232A4CC1F0000FB3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B315222A4CC1F0000FB3A3 /* Assets.xcassets */; };
@@ -79,6 +87,14 @@
 		A69E0F662A531B7A00EED1B7 /* ListProgramContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentModel.swift; sourceTree = "<group>"; };
 		A69E0F692A53211100EED1B7 /* ListProgramContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentViewModel.swift; sourceTree = "<group>"; };
 		A69E0F6C2A53227D00EED1B7 /* ListProgramContentAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentAdapter.swift; sourceTree = "<group>"; };
+		A69E0F6E2A53355A00EED1B7 /* ClassroomForProgramContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomForProgramContentViewModel.swift; sourceTree = "<group>"; };
+		A69E0F752A5340DC00EED1B7 /* ProgramContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentViewController.swift; sourceTree = "<group>"; };
+		A69E0F772A5340EF00EED1B7 /* ProgramContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentView.swift; sourceTree = "<group>"; };
+		A69E0F7B2A53414E00EED1B7 /* ProgramContentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentPresenter.swift; sourceTree = "<group>"; };
+		A69E0F7D2A53415800EED1B7 /* ProgramContentProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentProtocols.swift; sourceTree = "<group>"; };
+		A69E0F802A537E6000EED1B7 /* ProgramContentServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentServiceProtocols.swift; sourceTree = "<group>"; };
+		A69E0F822A537F1E00EED1B7 /* ProgramContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentService.swift; sourceTree = "<group>"; };
+		A69E0F842A5382AE00EED1B7 /* ProgramContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentModel.swift; sourceTree = "<group>"; };
 		A6B315162A4CC1EF000FB3A3 /* gestor-escolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gestor-escolar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +183,7 @@
 			children = (
 				A69E0F692A53211100EED1B7 /* ListProgramContentViewModel.swift */,
 				A69E0F6C2A53227D00EED1B7 /* ListProgramContentAdapter.swift */,
+				A69E0F6E2A53355A00EED1B7 /* ClassroomForProgramContentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -203,6 +220,58 @@
 				A69E0F662A531B7A00EED1B7 /* ListProgramContentModel.swift */,
 			);
 			path = ListProgramContent;
+			sourceTree = "<group>";
+		};
+		A69E0F702A5340A400EED1B7 /* ProgramContent */ = {
+			isa = PBXGroup;
+			children = (
+				A69E0F732A5340BB00EED1B7 /* Protocols */,
+				A69E0F712A5340AF00EED1B7 /* ViewModel */,
+				A69E0F722A5340B600EED1B7 /* View */,
+				A69E0F752A5340DC00EED1B7 /* ProgramContentViewController.swift */,
+				A69E0F7B2A53414E00EED1B7 /* ProgramContentPresenter.swift */,
+			);
+			path = ProgramContent;
+			sourceTree = "<group>";
+		};
+		A69E0F712A5340AF00EED1B7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A69E0F722A5340B600EED1B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A69E0F772A5340EF00EED1B7 /* ProgramContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A69E0F732A5340BB00EED1B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A69E0F7D2A53415800EED1B7 /* ProgramContentProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A69E0F7F2A537E4000EED1B7 /* ProgramContent */ = {
+			isa = PBXGroup;
+			children = (
+				A69E0F802A537E6000EED1B7 /* ProgramContentServiceProtocols.swift */,
+				A69E0F822A537F1E00EED1B7 /* ProgramContentService.swift */,
+			);
+			path = ProgramContent;
+			sourceTree = "<group>";
+		};
+		A69E0F862A5382D600EED1B7 /* ProgramContent */ = {
+			isa = PBXGroup;
+			children = (
+				A69E0F842A5382AE00EED1B7 /* ProgramContentModel.swift */,
+			);
+			path = ProgramContent;
 			sourceTree = "<group>";
 		};
 		A6B3150D2A4CC1EF000FB3A3 = {
@@ -272,6 +341,7 @@
 		A6B3154E2A4CC3A6000FB3A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A69E0F702A5340A400EED1B7 /* ProgramContent */,
 				A69E0F512A52650900EED1B7 /* ListProgramContent  */,
 				A6B315812A4F09AF000FB3A3 /* Classrooms */,
 				A6B3154F2A4CC3B0000FB3A3 /* Home */,
@@ -345,6 +415,7 @@
 		A6B3156D2A4D0291000FB3A3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A69E0F7F2A537E4000EED1B7 /* ProgramContent */,
 				A69E0F5E2A527C7E00EED1B7 /* ListProgramContent */,
 				A6B3157C2A4F0972000FB3A3 /* Classroom */,
 				A6B3156E2A4D029E000FB3A3 /* Auth */,
@@ -364,6 +435,7 @@
 		A6B315712A4D0335000FB3A3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A69E0F862A5382D600EED1B7 /* ProgramContent */,
 				A69E0F682A531C7100EED1B7 /* ListProgramContent */,
 				A6B3158F2A4F265D000FB3A3 /* Classroom */,
 				A6B315722A4D0397000FB3A3 /* Auth */,
@@ -580,7 +652,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69E0F812A537E6000EED1B7 /* ProgramContentServiceProtocols.swift in Sources */,
 				A6B315552A4CC484000FB3A3 /* HomeViewController.swift in Sources */,
+				A69E0F832A537F1E00EED1B7 /* ProgramContentService.swift in Sources */,
 				A6B3157F2A4F0972000FB3A3 /* ClassroomServiceProtocols.swift in Sources */,
 				A6B315592A4CC618000FB3A3 /* HomeView.swift in Sources */,
 				A6B3155F2A4CC75A000FB3A3 /* DSColors.swift in Sources */,
@@ -589,6 +663,7 @@
 				A6B315612A4CC75A000FB3A3 /* DSSpacing.swift in Sources */,
 				A6B3151A2A4CC1EF000FB3A3 /* AppDelegate.swift in Sources */,
 				A69E0F602A527CE200EED1B7 /* ListProgramContentServiceProtocols.swift in Sources */,
+				A69E0F7C2A53414E00EED1B7 /* ProgramContentPresenter.swift in Sources */,
 				A6B3151C2A4CC1EF000FB3A3 /* SceneDelegate.swift in Sources */,
 				A6B3159A2A4F5A53000FB3A3 /* ClassroomModelAdapter.swift in Sources */,
 				A6B3157B2A4DD0D0000FB3A3 /* HomeHeaderView.swift in Sources */,
@@ -600,17 +675,22 @@
 				A69E0F6D2A53227D00EED1B7 /* ListProgramContentAdapter.swift in Sources */,
 				A6B315742A4D03B2000FB3A3 /* AuthUserModel.swift in Sources */,
 				A69E0F562A52656300EED1B7 /* ListProgramaContentViewController.swift in Sources */,
+				A69E0F762A5340DC00EED1B7 /* ProgramContentViewController.swift in Sources */,
 				A69E0F5D2A526BBD00EED1B7 /* ProgramContentDatesCollectionViewCell.swift in Sources */,
 				A6B3154B2A4CC2BD000FB3A3 /* MainCoordinatorProtocols.swift in Sources */,
+				A69E0F7E2A53415800EED1B7 /* ProgramContentProtocols.swift in Sources */,
 				A6B3158B2A4F09AF000FB3A3 /* ClassroomsViewController.swift in Sources */,
+				A69E0F852A5382AE00EED1B7 /* ProgramContentModel.swift in Sources */,
 				A6B315802A4F0972000FB3A3 /* ClassroomService.swift in Sources */,
 				A69E0F582A52659E00EED1B7 /* ListProgramContentProtocols.swift in Sources */,
 				A6B3158C2A4F09AF000FB3A3 /* ClassroomCollectionViewCell.swift in Sources */,
 				A6B315972A4F598A000FB3A3 /* ClassroomsViewModel.swift in Sources */,
+				A69E0F6F2A53355A00EED1B7 /* ClassroomForProgramContentViewModel.swift in Sources */,
 				A69E0F652A531AFC00EED1B7 /* ListProgramContentService.swift in Sources */,
 				A6B315932A4F268C000FB3A3 /* ClassroomModel.swift in Sources */,
 				A6B315692A4CFF93000FB3A3 /* UIView+addShadow.swift in Sources */,
 				A6B3158A2A4F09AF000FB3A3 /* ClassroomsPresenter.swift in Sources */,
+				A69E0F782A5340EF00EED1B7 /* ProgramContentView.swift in Sources */,
 				A6B315652A4CC826000FB3A3 /* MenuCollectionViewCell.swift in Sources */,
 				A6B3158E2A4F09AF000FB3A3 /* ClassroomsProtocols.swift in Sources */,
 				A69E0F5A2A52666300EED1B7 /* ListProgramContentView.swift in Sources */,

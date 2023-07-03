@@ -3,9 +3,15 @@ import Foundation
 final class ListProgramContentPresenter: ListProgramContentPresenterProtocol {
     weak var controller: ListProgramContentViewControllerProtocol?
     private let apiService = ListProgramContentService()
+    let viewModel: ClassroomForProgramContentViewModel
 
-    func fecthProgramContents() {
-        apiService.fetch { [weak self] result in
+    init(viewModel: ClassroomForProgramContentViewModel) {
+        self.viewModel = viewModel
+        fecthProgramContents(with: viewModel)
+    }
+    
+    func fecthProgramContents(with viewModel: ClassroomForProgramContentViewModel) {
+        apiService.fetch(with: viewModel) { [weak self] result in
             switch result {
             case .success(let answers):
                 self?.controller?.show(with: ListProgramContentAdapter.adapt(answers: answers.answers))

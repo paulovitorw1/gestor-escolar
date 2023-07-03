@@ -26,8 +26,17 @@ class ClassroomsViewController: UIViewController {
     }
 
     private func setupViewBindings() {
-        contentView.didTappedClassroom = { [weak self] in
-            self?.delegate?.didToListContents()
+        contentView.didTappedClassroom = { [weak self] classPeriod,
+            schoolCode,
+            gradeLevel,
+            schoolClass,
+            disciplineCode in
+            let viewModel = ClassroomForProgramContentViewModel(classPeriod: classPeriod.lowercased(),
+                                                                schoolCode: schoolCode,
+                                                                gradeLevel: gradeLevel,
+                                                                schoolClass: schoolClass,
+                                                                disciplineCode: disciplineCode)
+            self?.delegate?.didToListContents(with: viewModel)
         }
     }
 }

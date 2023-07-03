@@ -1,8 +1,8 @@
 import UIKit
 
 final class ListProgramContentView: UIView {
-    var didTappedProgramContent: (() -> Void)?
-    private var listContents: [ListProgramContentViewModel] = []
+    var didTappedProgramContent: ((ProgramContentViewModel) -> Void)?
+    private var listContents: [ProgramContentViewModel] = []
 
     private let programContentColletionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -68,7 +68,10 @@ extension ListProgramContentView: UICollectionViewDelegate, UICollectionViewData
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        didTappedProgramContent?()
+        didTappedProgramContent?(ProgramContentViewModel(recnum: listContents[indexPath.row].recnum,
+                                                         date: listContents[indexPath.row].date,
+                                                         text: listContents[indexPath.row].text))
+
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -77,7 +80,7 @@ extension ListProgramContentView: UICollectionViewDelegate, UICollectionViewData
 }
 
 extension ListProgramContentView: ListProgramContentViewProtocol {
-    func show(with viewModel: [ListProgramContentViewModel]) {
+    func show(with viewModel: [ProgramContentViewModel]) {
         listContents = viewModel
         DispatchQueue.main.async { [weak self] in
             self?.programContentColletionView.reloadData()

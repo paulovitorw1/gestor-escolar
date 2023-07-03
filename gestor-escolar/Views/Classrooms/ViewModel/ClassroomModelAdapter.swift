@@ -5,7 +5,11 @@ struct ClassroomModelAdapter {
         return classrooms.map { classroom in
             return ClassroomsViewModel(title: "\(classroom.gradeDescription) - Turma: \(classroom.schoolClass)",
                                        discipline: classroom.discipline,
-                                       classPeriod: self.classPeriod(with: classroom.shift))
+                                       classPeriod: self.classPeriod(with: classroom.shift),
+                                       schoolCode: classroom.schoolCode,
+                                       gradeLevel: classroom.gradeLevel,
+                                       schoolClass: classroom.schoolClass,
+                                       disciplineCode: classroom.disciplineCode)
         }
     }
 

@@ -1,15 +1,13 @@
-import Foundation
-
 import UIKit
 
 protocol ListProgramContentViewProtocol: UIView {
-    var didTappedProgramContent: (() -> Void)? { get set }
+    var didTappedProgramContent: ((ProgramContentViewModel) -> Void)? { get set }
 
-    func show(with viewModel: [ListProgramContentViewModel])
+    func show(with viewModel: [ProgramContentViewModel])
 }
 
 protocol ListProgramContentViewControllerProtocol: UIViewController {
-    func show(with viewModel: [ListProgramContentViewModel])
+    func show(with viewModel: [ProgramContentViewModel])
 }
 
 protocol ProgramContentDatesCollectionViewCellProtocol: UICollectionViewCell {
@@ -17,9 +15,9 @@ protocol ProgramContentDatesCollectionViewCellProtocol: UICollectionViewCell {
 }
 
 protocol ListProgramContentPresenterProtocol: AnyObject {
-    func fecthProgramContents()
+    func fecthProgramContents(with viewModel: ClassroomForProgramContentViewModel)
 }
 
 protocol ListProgramContentViewControllerDelegate: AnyObject {
-    func didToProgramContent()
+    func didToProgramContent(with viewModel: ProgramContentViewModel)
 }

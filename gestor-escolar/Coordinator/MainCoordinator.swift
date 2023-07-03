@@ -27,8 +27,8 @@ extension MainCoordinator: HomeViewControllerDelegate {
 }
 
 extension MainCoordinator: ClassroomsViewControllerDelegate {
-    func didToListContents() {
-        let presenter = ListProgramContentPresenter()
+    func didToListContents(with viewModel: ClassroomForProgramContentViewModel) {
+        let presenter = ListProgramContentPresenter(viewModel: viewModel)
         let controller = ListProgramaContentViewController(presenter: presenter)
         controller.delegate = self
         presenter.controller = controller
@@ -38,7 +38,18 @@ extension MainCoordinator: ClassroomsViewControllerDelegate {
 }
 
 extension MainCoordinator: ListProgramContentViewControllerDelegate {
-    func didToProgramContent() {
-        print(#function)
+    func didToProgramContent(with viewModel: ProgramContentViewModel) {
+        let presenter = ProgramContentPresenter(viewModel: viewModel)
+        let controller = ProgramContentViewController(presenter: presenter)
+        controller.delegate = self
+        presenter.controller = controller
+        navigationController.pushViewController(controller, animated: true)
     }
+}
+
+extension MainCoordinator: ProgramContentViewControllerDelegate {
+    func didToProgramContent(recnum: String, text: String) {
+
+    }
+
 }

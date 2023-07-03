@@ -1,7 +1,7 @@
 import UIKit
 
 protocol ClassroomsViewProtocol: UIView {
-    var didTappedClassroom: (() -> Void)? { get set }
+    var didTappedClassroom: ((String, String, String, String, String) -> Void)? { get set }
     
     func show(with viewModel: [ClassroomsViewModel])
 }
@@ -19,5 +19,5 @@ protocol ClassroomsPresenterProtocol: AnyObject {
 }
 
 protocol ClassroomsViewControllerDelegate: AnyObject {
-    func didToListContents()
+    func didToListContents(with viewModel: ClassroomForProgramContentViewModel)
 }
