@@ -17,3 +17,7 @@ protocol ClassroomCollectionViewCellProtocol: UICollectionViewCell {
 protocol ClassroomsPresenterProtocol: AnyObject {
     func fecthClassrooms(with viewModel: HomeConfigViewModel)
 }
+
+protocol ClassroomsViewControllerDelegate: AnyObject {
+    func didToListContents()
+}

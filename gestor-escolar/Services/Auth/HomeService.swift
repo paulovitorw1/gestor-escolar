@@ -20,7 +20,6 @@ final class APIService: AuthUserProtocol {
 
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
-                print(data)
                 do {
                     let decoder = JSONDecoder()
                     let response = try decoder.decode(APIResponseAuth.self, from: data)

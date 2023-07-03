@@ -1,8 +1,8 @@
 import Foundation
 
-final class ClassroomAPIService: ClassroomAPIServiceProtocol {
-    func fetch(with viewModel: HomeConfigViewModel, completion: @escaping(Result<ClassroomModel, Error>) -> Void) {
-        let baseUrl = "http://escola.computex.com.br:86/escola910/json_horariop_turmas.php?"
+final class ListProgramContentService: ListProgramContentAPIServiceProtocol {
+    func fetch(completion: @escaping (Result<ListProgramContentModel, Error>) -> Void) {
+        let baseUrl = "http://escola.computex.com.br:86/escola910/json_visualiza_conteudo_programatico.php"
         guard let url = URL(string: baseUrl) else {
             completion(.failure(NSError(domain: "", code: 0, userInfo: nil)))
             return
@@ -13,7 +13,8 @@ final class ClassroomAPIService: ClassroomAPIServiceProtocol {
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
 
-        let body = "matricula=\(viewModel.registration)&ano=\(viewModel.year)&codigo_escola=\(viewModel.schoolCode)"
+        let body = "matricula=\("1091")&senha=\("11111111")&escola=\("1")&ano=\("20231")&grauSerie=\("15")&turma=\("1")&turno=\("M")&etapa=\("2")&codDisciplina=\("1507")"
+
         let finalBody = body.data(using: .utf8)
         request.httpBody = finalBody
 
@@ -21,7 +22,7 @@ final class ClassroomAPIService: ClassroomAPIServiceProtocol {
             if let data = data {
                 do {
                     let decoder = JSONDecoder()
-                    let response = try decoder.decode(ClassroomModel.self, from: data)
+                    let response = try decoder.decode(ListProgramContentModel.self, from: data)
                     completion(.success(response))
                 } catch {
                     print("Erro ao decodificar os dados da resposta: \(error.localizedDescription)")
