@@ -1,7 +1,7 @@
 import Foundation
 
 final class ClassroomAPIService: ClassroomAPIServiceProtocol {
-    func show(with viewModel: HomeConfigViewModel, completion: @escaping(Result<ClassroomModel, Error>) -> Void) {
+    func fetch(with viewModel: HomeConfigViewModel, completion: @escaping(Result<ClassroomModel, Error>) -> Void) {
         let baseUrl = "http://escola.computex.com.br:86/escola910/json_horariop_turmas.php?"
         guard let url = URL(string: baseUrl) else {
             completion(.failure(NSError(domain: "", code: 0, userInfo: nil)))

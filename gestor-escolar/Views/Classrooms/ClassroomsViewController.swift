@@ -2,7 +2,7 @@ import UIKit
 
 class ClassroomsViewController: UIViewController {
 
-//    weak var delegate: HomeViewControllerDelegate?
+    weak var delegate: ClassroomsViewControllerDelegate?
     private var contentView: ClassroomsViewProtocol
     private var presenter: ClassroomsPresenterProtocol
 
@@ -21,6 +21,14 @@ class ClassroomsViewController: UIViewController {
         super.viewDidLoad()
         view = contentView
         title = "Conteúdo Programático"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: DSColors.black]
+        setupViewBindings()
+    }
+
+    private func setupViewBindings() {
+        contentView.didTappedClassroom = { [weak self] in
+            self?.delegate?.didSeeStudyProgram()
+        }
     }
 }
 

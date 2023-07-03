@@ -47,8 +47,6 @@ final class ClassroomsView: UIView {
                                                             leading: DSSpacing.small,
                                                             bottom: DSSpacing.xSmall,
                                                             trailing: DSSpacing.small)
-
-//            section.orthogonalScrollingBehavior =?.
             return section
         }
     }
@@ -92,7 +90,7 @@ extension ClassroomsView: UICollectionViewDelegate, UICollectionViewDataSource, 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        print(indexPath)
+        didTappedClassroom?()
     }
 }
 

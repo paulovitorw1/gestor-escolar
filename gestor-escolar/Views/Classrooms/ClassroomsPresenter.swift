@@ -12,7 +12,7 @@ final class ClassroomsPresenter {
     }
     
     func fecthClassrooms(with viewModel: HomeConfigViewModel) {
-        apiService.show(with: viewModel) { [weak self] result in
+        apiService.fetch(with: viewModel) { [weak self] result in
             switch result {
             case .success(let classrooms):
                 self?.controller?.show(with: ClassroomModelAdapter.adapt(classrooms: classrooms.classrooms))
