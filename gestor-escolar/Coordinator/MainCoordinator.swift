@@ -27,9 +27,18 @@ extension MainCoordinator: HomeViewControllerDelegate {
 }
 
 extension MainCoordinator: ClassroomsViewControllerDelegate {
-    func didSeeStudyProgram() {
-        let controller = ListProgramaContentViewController()
-//        presenter.controller = controller
-        navigationController.present(controller, animated: true)
+    func didToListContents() {
+        let presenter = ListProgramContentPresenter()
+        let controller = ListProgramaContentViewController(presenter: presenter)
+        controller.delegate = self
+        presenter.controller = controller
+        let navigationController = UINavigationController(rootViewController: controller)
+        self.navigationController.present(navigationController, animated: true, completion: nil)
+    }
+}
+
+extension MainCoordinator: ListProgramContentViewControllerDelegate {
+    func didToProgramContent() {
+        print(#function)
     }
 }

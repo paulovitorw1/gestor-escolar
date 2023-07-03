@@ -27,7 +27,7 @@ class ClassroomsViewController: UIViewController {
 
     private func setupViewBindings() {
         contentView.didTappedClassroom = { [weak self] in
-            self?.delegate?.didSeeStudyProgram()
+            self?.delegate?.didToListContents()
         }
     }
 }

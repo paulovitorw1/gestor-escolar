@@ -3,13 +3,13 @@ import Foundation
 import UIKit
 
 protocol ListProgramContentViewProtocol: UIView {
-    var didTappedClassroom: (() -> Void)? { get set }
+    var didTappedProgramContent: (() -> Void)? { get set }
 
-    func show(with viewModel: [ClassroomsViewModel])
+    func show(with viewModel: [ListProgramContentViewModel])
 }
 
 protocol ListProgramContentViewControllerProtocol: UIViewController {
-    func show(with viewModel: [ClassroomsViewModel])
+    func show(with viewModel: [ListProgramContentViewModel])
 }
 
 protocol ProgramContentDatesCollectionViewCellProtocol: UICollectionViewCell {
@@ -17,9 +17,9 @@ protocol ProgramContentDatesCollectionViewCellProtocol: UICollectionViewCell {
 }
 
 protocol ListProgramContentPresenterProtocol: AnyObject {
-    func fecthClassrooms(with viewModel: HomeConfigViewModel)
+    func fecthProgramContents()
 }
 
 protocol ListProgramContentViewControllerDelegate: AnyObject {
-    func didSeeStudyProgram()
+    func didToProgramContent()
 }

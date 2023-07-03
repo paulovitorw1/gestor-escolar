@@ -12,6 +12,11 @@
 		A69E0F5A2A52666300EED1B7 /* ListProgramContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F592A52666300EED1B7 /* ListProgramContentView.swift */; };
 		A69E0F5D2A526BBD00EED1B7 /* ProgramContentDatesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F5C2A526BBD00EED1B7 /* ProgramContentDatesCollectionViewCell.swift */; };
 		A69E0F602A527CE200EED1B7 /* ListProgramContentServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F5F2A527CE200EED1B7 /* ListProgramContentServiceProtocols.swift */; };
+		A69E0F632A52805400EED1B7 /* ListProgramContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F622A52805400EED1B7 /* ListProgramContentPresenter.swift */; };
+		A69E0F652A531AFC00EED1B7 /* ListProgramContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F642A531AFC00EED1B7 /* ListProgramContentService.swift */; };
+		A69E0F672A531B7A00EED1B7 /* ListProgramContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F662A531B7A00EED1B7 /* ListProgramContentModel.swift */; };
+		A69E0F6A2A53211100EED1B7 /* ListProgramContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F692A53211100EED1B7 /* ListProgramContentViewModel.swift */; };
+		A69E0F6D2A53227D00EED1B7 /* ListProgramContentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F6C2A53227D00EED1B7 /* ListProgramContentAdapter.swift */; };
 		A6B3151A2A4CC1EF000FB3A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */; };
 		A6B3151C2A4CC1EF000FB3A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */; };
 		A6B315232A4CC1F0000FB3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B315222A4CC1F0000FB3A3 /* Assets.xcassets */; };
@@ -69,6 +74,11 @@
 		A69E0F592A52666300EED1B7 /* ListProgramContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentView.swift; sourceTree = "<group>"; };
 		A69E0F5C2A526BBD00EED1B7 /* ProgramContentDatesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentDatesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A69E0F5F2A527CE200EED1B7 /* ListProgramContentServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentServiceProtocols.swift; sourceTree = "<group>"; };
+		A69E0F622A52805400EED1B7 /* ListProgramContentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentPresenter.swift; sourceTree = "<group>"; };
+		A69E0F642A531AFC00EED1B7 /* ListProgramContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentService.swift; sourceTree = "<group>"; };
+		A69E0F662A531B7A00EED1B7 /* ListProgramContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentModel.swift; sourceTree = "<group>"; };
+		A69E0F692A53211100EED1B7 /* ListProgramContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentViewModel.swift; sourceTree = "<group>"; };
+		A69E0F6C2A53227D00EED1B7 /* ListProgramContentAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentAdapter.swift; sourceTree = "<group>"; };
 		A6B315162A4CC1EF000FB3A3 /* gestor-escolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gestor-escolar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +149,7 @@
 				A69E0F532A52652800EED1B7 /* ViewModel */,
 				A69E0F542A52652F00EED1B7 /* View */,
 				A69E0F552A52656300EED1B7 /* ListProgramaContentViewController.swift */,
+				A69E0F622A52805400EED1B7 /* ListProgramContentPresenter.swift */,
 			);
 			path = "ListProgramContent ";
 			sourceTree = "<group>";
@@ -154,6 +165,8 @@
 		A69E0F532A52652800EED1B7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A69E0F692A53211100EED1B7 /* ListProgramContentViewModel.swift */,
+				A69E0F6C2A53227D00EED1B7 /* ListProgramContentAdapter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -179,6 +192,15 @@
 			isa = PBXGroup;
 			children = (
 				A69E0F5F2A527CE200EED1B7 /* ListProgramContentServiceProtocols.swift */,
+				A69E0F642A531AFC00EED1B7 /* ListProgramContentService.swift */,
+			);
+			path = ListProgramContent;
+			sourceTree = "<group>";
+		};
+		A69E0F682A531C7100EED1B7 /* ListProgramContent */ = {
+			isa = PBXGroup;
+			children = (
+				A69E0F662A531B7A00EED1B7 /* ListProgramContentModel.swift */,
 			);
 			path = ListProgramContent;
 			sourceTree = "<group>";
@@ -342,6 +364,7 @@
 		A6B315712A4D0335000FB3A3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A69E0F682A531C7100EED1B7 /* ListProgramContent */,
 				A6B3158F2A4F265D000FB3A3 /* Classroom */,
 				A6B315722A4D0397000FB3A3 /* Auth */,
 			);
@@ -574,6 +597,7 @@
 				A6B315762A4D06B8000FB3A3 /* HomeService.swift in Sources */,
 				A6B315702A4D02ED000FB3A3 /* AuthProtocols.swift in Sources */,
 				A6B3158D2A4F09AF000FB3A3 /* ClassroomsView.swift in Sources */,
+				A69E0F6D2A53227D00EED1B7 /* ListProgramContentAdapter.swift in Sources */,
 				A6B315742A4D03B2000FB3A3 /* AuthUserModel.swift in Sources */,
 				A69E0F562A52656300EED1B7 /* ListProgramaContentViewController.swift in Sources */,
 				A69E0F5D2A526BBD00EED1B7 /* ProgramContentDatesCollectionViewCell.swift in Sources */,
@@ -583,12 +607,16 @@
 				A69E0F582A52659E00EED1B7 /* ListProgramContentProtocols.swift in Sources */,
 				A6B3158C2A4F09AF000FB3A3 /* ClassroomCollectionViewCell.swift in Sources */,
 				A6B315972A4F598A000FB3A3 /* ClassroomsViewModel.swift in Sources */,
+				A69E0F652A531AFC00EED1B7 /* ListProgramContentService.swift in Sources */,
 				A6B315932A4F268C000FB3A3 /* ClassroomModel.swift in Sources */,
 				A6B315692A4CFF93000FB3A3 /* UIView+addShadow.swift in Sources */,
 				A6B3158A2A4F09AF000FB3A3 /* ClassroomsPresenter.swift in Sources */,
 				A6B315652A4CC826000FB3A3 /* MenuCollectionViewCell.swift in Sources */,
 				A6B3158E2A4F09AF000FB3A3 /* ClassroomsProtocols.swift in Sources */,
 				A69E0F5A2A52666300EED1B7 /* ListProgramContentView.swift in Sources */,
+				A69E0F6A2A53211100EED1B7 /* ListProgramContentViewModel.swift in Sources */,
+				A69E0F632A52805400EED1B7 /* ListProgramContentPresenter.swift in Sources */,
+				A69E0F672A531B7A00EED1B7 /* ListProgramContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

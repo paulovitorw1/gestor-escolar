@@ -100,6 +100,5 @@ extension ClassroomsView: ClassroomsViewProtocol {
         DispatchQueue.main.async { [weak self] in
             self?.classroomColletionView.reloadData()
         }
-
     }
 }

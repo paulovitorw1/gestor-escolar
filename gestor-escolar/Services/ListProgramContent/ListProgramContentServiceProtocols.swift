@@ -1,5 +1,5 @@
 import Foundation
 
 protocol ListProgramContentAPIServiceProtocol: AnyObject {
-    func fetch(with viewModel: HomeConfigViewModel, completion: @escaping(Result<ClassroomModel, Error>) -> Void)
+    func fetch(completion: @escaping(Result<ListProgramContentModel, Error>) -> Void)
 }

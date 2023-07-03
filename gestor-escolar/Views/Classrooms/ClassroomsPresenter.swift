@@ -1,6 +1,6 @@
 import Foundation
 
-final class ClassroomsPresenter {
+final class ClassroomsPresenter: ClassroomsPresenterProtocol {
     weak var controller: ClassroomsViewControllerProtocol?
 
     let viewModel: HomeConfigViewModel
@@ -21,8 +21,4 @@ final class ClassroomsPresenter {
             }
         }
     }
-}
-
-extension ClassroomsPresenter: ClassroomsPresenterProtocol {
-    
 }

@@ -19,5 +19,5 @@ protocol ClassroomsPresenterProtocol: AnyObject {
 }
 
 protocol ClassroomsViewControllerDelegate: AnyObject {
-    func didSeeStudyProgram()
+    func didToListContents()
 }
