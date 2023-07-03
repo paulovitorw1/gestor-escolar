@@ -1,7 +1,7 @@
 import UIKit
 
 final class ClassroomsView: UIView {
-    var didTappedClassroom: (() -> Void)?
+    var didTappedClassroom: ((String, String, String, String, String) -> Void)?
     private var listClassrooms: [ClassroomsViewModel] = []
     
     private let classroomColletionView: UICollectionView = {
@@ -90,7 +90,11 @@ extension ClassroomsView: UICollectionViewDelegate, UICollectionViewDataSource, 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        didTappedClassroom?()
+        didTappedClassroom?(listClassrooms[indexPath.row].classPeriod,
+                            listClassrooms[indexPath.row].schoolCode,
+                            listClassrooms[indexPath.row].gradeLevel,
+                            listClassrooms[indexPath.row].schoolClass,
+                            listClassrooms[indexPath.row].disciplineCode)
     }
 }
 

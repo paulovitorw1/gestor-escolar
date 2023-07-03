@@ -1,6 +1,6 @@
 import Foundation
 
-struct ListProgramContentViewModel {
+struct ProgramContentViewModel {
     let recnum: String
     let date: String
     let text: String

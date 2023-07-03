@@ -1,10 +1,10 @@
 import Foundation
 
 struct ListProgramContentAdapter {
-    static func adapt(answers: [ProgramContentModel]) -> [ListProgramContentViewModel] {
+    static func adapt(answers: [ProgramContentModel]) -> [ProgramContentViewModel] {
         return answers.map { answer in
-            return ListProgramContentViewModel(recnum: answer.recnum,
-                                               date: "\(answer.date) - \(answer.startTime) as \(answer.endTime)",
+            return ProgramContentViewModel(recnum: answer.recnum,
+                                               date: "\(answer.date) - \(answer.startTime) às \(answer.endTime)",
                                                text: answer.text)
         }
     }

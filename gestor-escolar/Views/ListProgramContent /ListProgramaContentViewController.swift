@@ -25,7 +25,6 @@ final class ListProgramaContentViewController: UIViewController {
         navigationItem.rightBarButtonItem = closeButton
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: DSColors.black]
         setupViewBindings()
-        presenter.fecthProgramContents()
     }
 
     @objc private func closeButtonTapped() {
@@ -33,14 +32,15 @@ final class ListProgramaContentViewController: UIViewController {
     }
 
     private func setupViewBindings() {
-        contentView.didTappedProgramContent = { [weak self] in
-            self?.delegate?.didToProgramContent()
+        contentView.didTappedProgramContent = { [weak self] viewModel in
+            self?.closeButtonTapped()
+            self?.delegate?.didToProgramContent(with: viewModel)
         }
     }
 }
 
 extension ListProgramaContentViewController: ListProgramContentViewControllerProtocol {
-    func show(with viewModel: [ListProgramContentViewModel]) {
+    func show(with viewModel: [ProgramContentViewModel]) {
         contentView.show(with: viewModel)
     }
 }

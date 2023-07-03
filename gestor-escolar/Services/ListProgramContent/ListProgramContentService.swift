@@ -1,7 +1,7 @@
 import Foundation
 
 final class ListProgramContentService: ListProgramContentAPIServiceProtocol {
-    func fetch(completion: @escaping (Result<ListProgramContentModel, Error>) -> Void) {
+    func fetch(with viewModel: ClassroomForProgramContentViewModel, completion: @escaping (Result<ListProgramContentModel, Error>) -> Void) {
         let baseUrl = "http://escola.computex.com.br:86/escola910/json_visualiza_conteudo_programatico.php"
         guard let url = URL(string: baseUrl) else {
             completion(.failure(NSError(domain: "", code: 0, userInfo: nil)))
@@ -13,7 +13,7 @@ final class ListProgramContentService: ListProgramContentAPIServiceProtocol {
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
 
-        let body = "matricula=\("1091")&senha=\("11111111")&escola=\("1")&ano=\("20231")&grauSerie=\("15")&turma=\("1")&turno=\("M")&etapa=\("2")&codDisciplina=\("1507")"
+        let body = "matricula=\("1091")&senha=\("11111111")&escola=\(viewModel.schoolClass)&ano=\("20231")&grauSerie=\(viewModel.gradeLevel)&turma=\(viewModel.schoolClass)&turno=\(viewModel.classPeriod)&etapa=\("2")&codDisciplina=\(viewModel.disciplineCode)"
 
         let finalBody = body.data(using: .utf8)
         request.httpBody = finalBody
