@@ -1,10 +1,3 @@
-//
-//  DSSpacing.swift
-//  todoList
-//
-//  Created by Paulo Vitor on 08/03/23.
-//
-
 import Foundation
 
 enum DSSpacing {

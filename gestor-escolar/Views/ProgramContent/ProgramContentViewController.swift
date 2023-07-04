@@ -1,7 +1,6 @@
 import UIKit
 
 final class ProgramContentViewController: UIViewController {
-    weak var delegate: ProgramContentViewControllerDelegate?
     private var contentView: ProgramContentViewProtocol
     private var presenter: ProgramContentPresenterProtocol
 

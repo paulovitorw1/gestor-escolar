@@ -41,15 +41,7 @@ extension MainCoordinator: ListProgramContentViewControllerDelegate {
     func didToProgramContent(with viewModel: ProgramContentViewModel) {
         let presenter = ProgramContentPresenter(viewModel: viewModel)
         let controller = ProgramContentViewController(presenter: presenter)
-        controller.delegate = self
         presenter.controller = controller
         navigationController.pushViewController(controller, animated: true)
     }
-}
-
-extension MainCoordinator: ProgramContentViewControllerDelegate {
-    func didToProgramContent(recnum: String, text: String) {
-
-    }
-
 }
