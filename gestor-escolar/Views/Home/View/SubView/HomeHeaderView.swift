@@ -32,7 +32,6 @@ final class HomeHeaderView: UIView {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Nome da Escola"
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
         label.textColor = DSColors.black
@@ -44,7 +43,6 @@ final class HomeHeaderView: UIView {
     private let subTitleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.text = "Paulo Vitor"
         label.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         label.textColor = DSColors.black
         label.numberOfLines = 0

@@ -16,7 +16,3 @@ protocol ProgramContentPresenterProtocol: AnyObject {
     func presentViewModel()
     func sendProgramContent(recnum: String, text: String)
 }
-
-protocol ProgramContentViewControllerDelegate: AnyObject {
-    func didToProgramContent(recnum: String, text: String)
-}
