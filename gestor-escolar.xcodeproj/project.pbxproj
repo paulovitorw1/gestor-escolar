@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A681F95C2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681F95B2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift */; };
+		A689E33E2A55DF5E006BF123 /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E33D2A55DF5E006BF123 /* HomeViewTests.swift */; };
+		A689E3412A55E002006BF123 /* HomeViewModel+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E3402A55E002006BF123 /* HomeViewModel+Stub.swift */; };
+		A689E3442A55E5AD006BF123 /* MenuCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E3432A55E5AD006BF123 /* MenuCollectionViewCellTests.swift */; };
+		A689E3462A55E66B006BF123 /* HomeMenuViewModel+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E3452A55E66B006BF123 /* HomeMenuViewModel+Stub.swift */; };
+		A689E3482A55EA68006BF123 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E3472A55EA68006BF123 /* HomeViewControllerTests.swift */; };
+		A689E34F2A55ED80006BF123 /* HomePresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E34E2A55ED7F006BF123 /* HomePresenterSpy.swift */; };
+		A689E3542A570380006BF123 /* HomeViewControllerDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E3532A570380006BF123 /* HomeViewControllerDelegateSpy.swift */; };
+		A689E3562A570504006BF123 /* HomeViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E3552A570504006BF123 /* HomeViewSpy.swift */; };
 		A69E0F562A52656300EED1B7 /* ListProgramaContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F552A52656300EED1B7 /* ListProgramaContentViewController.swift */; };
 		A69E0F582A52659E00EED1B7 /* ListProgramContentProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F572A52659E00EED1B7 /* ListProgramContentProtocols.swift */; };
 		A69E0F5A2A52666300EED1B7 /* ListProgramContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F592A52666300EED1B7 /* ListProgramContentView.swift */; };
@@ -25,11 +34,13 @@
 		A69E0F812A537E6000EED1B7 /* ProgramContentServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F802A537E6000EED1B7 /* ProgramContentServiceProtocols.swift */; };
 		A69E0F832A537F1E00EED1B7 /* ProgramContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F822A537F1E00EED1B7 /* ProgramContentService.swift */; };
 		A69E0F852A5382AE00EED1B7 /* ProgramContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F842A5382AE00EED1B7 /* ProgramContentModel.swift */; };
+		A69E0F972A53C27000EED1B7 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = A69E0F962A53C27000EED1B7 /* Quick */; };
+		A69E0F9A2A53C28700EED1B7 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = A69E0F992A53C28700EED1B7 /* Nimble */; };
+		A69E0FA02A53C41100EED1B7 /* HomeHeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F9F2A53C41100EED1B7 /* HomeHeaderViewTests.swift */; };
 		A6B3151A2A4CC1EF000FB3A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */; };
 		A6B3151C2A4CC1EF000FB3A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */; };
 		A6B315232A4CC1F0000FB3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B315222A4CC1F0000FB3A3 /* Assets.xcassets */; };
 		A6B315262A4CC1F0000FB3A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B315242A4CC1F0000FB3A3 /* LaunchScreen.storyboard */; };
-		A6B315312A4CC1F0000FB3A3 /* gestor_escolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315302A4CC1F0000FB3A3 /* gestor_escolarTests.swift */; };
 		A6B3153B2A4CC1F0000FB3A3 /* gestor_escolarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3153A2A4CC1F0000FB3A3 /* gestor_escolarUITests.swift */; };
 		A6B3153D2A4CC1F0000FB3A3 /* gestor_escolarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3153C2A4CC1F0000FB3A3 /* gestor_escolarUITestsLaunchTests.swift */; };
 		A6B3154B2A4CC2BD000FB3A3 /* MainCoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3154A2A4CC2BD000FB3A3 /* MainCoordinatorProtocols.swift */; };
@@ -77,6 +88,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A681F95B2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeConfigViewModel+Stub.swift"; sourceTree = "<group>"; };
+		A689E33D2A55DF5E006BF123 /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
+		A689E3402A55E002006BF123 /* HomeViewModel+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+Stub.swift"; sourceTree = "<group>"; };
+		A689E3432A55E5AD006BF123 /* MenuCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCellTests.swift; sourceTree = "<group>"; };
+		A689E3452A55E66B006BF123 /* HomeMenuViewModel+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeMenuViewModel+Stub.swift"; sourceTree = "<group>"; };
+		A689E3472A55EA68006BF123 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		A689E34E2A55ED7F006BF123 /* HomePresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterSpy.swift; sourceTree = "<group>"; };
+		A689E3532A570380006BF123 /* HomeViewControllerDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegateSpy.swift; sourceTree = "<group>"; };
+		A689E3552A570504006BF123 /* HomeViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSpy.swift; sourceTree = "<group>"; };
 		A69E0F552A52656300EED1B7 /* ListProgramaContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramaContentViewController.swift; sourceTree = "<group>"; };
 		A69E0F572A52659E00EED1B7 /* ListProgramContentProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentProtocols.swift; sourceTree = "<group>"; };
 		A69E0F592A52666300EED1B7 /* ListProgramContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProgramContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +115,7 @@
 		A69E0F802A537E6000EED1B7 /* ProgramContentServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentServiceProtocols.swift; sourceTree = "<group>"; };
 		A69E0F822A537F1E00EED1B7 /* ProgramContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentService.swift; sourceTree = "<group>"; };
 		A69E0F842A5382AE00EED1B7 /* ProgramContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentModel.swift; sourceTree = "<group>"; };
+		A69E0F9F2A53C41100EED1B7 /* HomeHeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderViewTests.swift; sourceTree = "<group>"; };
 		A6B315162A4CC1EF000FB3A3 /* gestor-escolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gestor-escolar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +123,6 @@
 		A6B315252A4CC1F0000FB3A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6B315272A4CC1F0000FB3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6B3152C2A4CC1F0000FB3A3 /* gestor-escolarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gestor-escolarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6B315302A4CC1F0000FB3A3 /* gestor_escolarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestor_escolarTests.swift; sourceTree = "<group>"; };
 		A6B315362A4CC1F0000FB3A3 /* gestor-escolarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gestor-escolarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B3153A2A4CC1F0000FB3A3 /* gestor_escolarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestor_escolarUITests.swift; sourceTree = "<group>"; };
 		A6B3153C2A4CC1F0000FB3A3 /* gestor_escolarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestor_escolarUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -145,6 +165,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69E0F972A53C27000EED1B7 /* Quick in Frameworks */,
+				A69E0F9A2A53C28700EED1B7 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +180,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A681F95A2A545FBA003F09E8 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				A689E34D2A55ED74006BF123 /* Mocks */,
+				A689E3492A55EB8B006BF123 /* Spies  */,
+				A689E33F2A55DFAF006BF123 /* Stubs */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		A689E33F2A55DFAF006BF123 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				A681F95B2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift */,
+				A689E3452A55E66B006BF123 /* HomeMenuViewModel+Stub.swift */,
+				A689E3402A55E002006BF123 /* HomeViewModel+Stub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		A689E3422A55E566006BF123 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A689E3432A55E5AD006BF123 /* MenuCollectionViewCellTests.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A689E3492A55EB8B006BF123 /* Spies  */ = {
+			isa = PBXGroup;
+			children = (
+				A689E34E2A55ED7F006BF123 /* HomePresenterSpy.swift */,
+				A689E3532A570380006BF123 /* HomeViewControllerDelegateSpy.swift */,
+				A689E3552A570504006BF123 /* HomeViewSpy.swift */,
+			);
+			path = "Spies ";
+			sourceTree = "<group>";
+		};
+		A689E34D2A55ED74006BF123 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		A69E0F512A52650900EED1B7 /* ListProgramContent  */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +341,42 @@
 			path = ProgramContent;
 			sourceTree = "<group>";
 		};
+		A69E0F9B2A53C2FA00EED1B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A69E0F9C2A53C31000EED1B7 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A69E0F9C2A53C31000EED1B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A681F95A2A545FBA003F09E8 /* Doubles */,
+				A69E0F9D2A53C31B00EED1B7 /* View */,
+				A689E3472A55EA68006BF123 /* HomeViewControllerTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A69E0F9D2A53C31B00EED1B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A689E3422A55E566006BF123 /* Cells */,
+				A69E0F9E2A53C33000EED1B7 /* SubView */,
+				A689E33D2A55DF5E006BF123 /* HomeViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A69E0F9E2A53C33000EED1B7 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				A69E0F9F2A53C41100EED1B7 /* HomeHeaderViewTests.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
 		A6B3150D2A4CC1EF000FB3A3 = {
 			isa = PBXGroup;
 			children = (
@@ -315,7 +418,7 @@
 		A6B3152F2A4CC1F0000FB3A3 /* gestor-escolarTests */ = {
 			isa = PBXGroup;
 			children = (
-				A6B315302A4CC1F0000FB3A3 /* gestor_escolarTests.swift */,
+				A69E0F9B2A53C2FA00EED1B7 /* Views */,
 			);
 			path = "gestor-escolarTests";
 			sourceTree = "<group>";
@@ -556,6 +659,10 @@
 				A6B3152E2A4CC1F0000FB3A3 /* PBXTargetDependency */,
 			);
 			name = "gestor-escolarTests";
+			packageProductDependencies = (
+				A69E0F962A53C27000EED1B7 /* Quick */,
+				A69E0F992A53C28700EED1B7 /* Nimble */,
+			);
 			productName = "gestor-escolarTests";
 			productReference = A6B3152C2A4CC1F0000FB3A3 /* gestor-escolarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -610,6 +717,10 @@
 				Base,
 			);
 			mainGroup = A6B3150D2A4CC1EF000FB3A3;
+			packageReferences = (
+				A69E0F952A53C27000EED1B7 /* XCRemoteSwiftPackageReference "Quick" */,
+				A69E0F982A53C28700EED1B7 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = A6B315172A4CC1EF000FB3A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -704,7 +815,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6B315312A4CC1F0000FB3A3 /* gestor_escolarTests.swift in Sources */,
+				A689E3562A570504006BF123 /* HomeViewSpy.swift in Sources */,
+				A689E34F2A55ED80006BF123 /* HomePresenterSpy.swift in Sources */,
+				A689E3412A55E002006BF123 /* HomeViewModel+Stub.swift in Sources */,
+				A69E0FA02A53C41100EED1B7 /* HomeHeaderViewTests.swift in Sources */,
+				A689E3542A570380006BF123 /* HomeViewControllerDelegateSpy.swift in Sources */,
+				A689E33E2A55DF5E006BF123 /* HomeViewTests.swift in Sources */,
+				A689E3442A55E5AD006BF123 /* MenuCollectionViewCellTests.swift in Sources */,
+				A689E3482A55EA68006BF123 /* HomeViewControllerTests.swift in Sources */,
+				A689E3462A55E66B006BF123 /* HomeMenuViewModel+Stub.swift in Sources */,
+				A681F95C2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1024,6 +1144,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A69E0F952A53C27000EED1B7 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.0;
+			};
+		};
+		A69E0F982A53C28700EED1B7 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A69E0F962A53C27000EED1B7 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A69E0F952A53C27000EED1B7 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		A69E0F992A53C28700EED1B7 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A69E0F982A53C28700EED1B7 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6B3150E2A4CC1EF000FB3A3 /* Project object */;
 }

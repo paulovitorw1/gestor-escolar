@@ -1,16 +1,16 @@
 import UIKit
 
-struct HomeViewModel {
+struct HomeViewModel: Equatable {
     let config: HomeConfigViewModel
     let menus: [HomeMenuViewModel]
 }
 
-struct HomeMenuViewModel {
+struct HomeMenuViewModel: Equatable {
     let title: String
     let icon: String
 }
 
-struct HomeConfigViewModel {
+struct HomeConfigViewModel: Equatable {
     let date: String
     let nameUser: String
     let logo: String

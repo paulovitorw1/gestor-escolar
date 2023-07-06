@@ -15,9 +15,13 @@ final class ProgramContentViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func loadView() {
+        super.loadView()
+        view = contentView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = contentView
         presenter.presentViewModel()
         setupViewBindings()
     }

@@ -17,9 +17,13 @@ final class ListProgramaContentViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func loadView() {
+        super.loadView()
+        view = contentView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = contentView
         title = "Conteudos programaticos"
         let closeButton = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonTapped))
         navigationItem.rightBarButtonItem = closeButton
