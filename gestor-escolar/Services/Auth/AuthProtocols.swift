@@ -1,5 +1,5 @@
 import Foundation
 
 protocol AuthUserProtocol: AnyObject {
-    func show(completion: @escaping (APIResponseAuth?) -> Void)
+    func show(completion: @escaping(Result<APIResponseAuth, Error>) -> Void)
 }

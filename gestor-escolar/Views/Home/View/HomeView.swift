@@ -107,9 +107,11 @@ extension HomeView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
 
 extension HomeView: HomeViewProtocol {
     func show(_ viewModel: HomeViewModel) {
+        listMenu = viewModel.menus
+        DispatchQueue.main.async { [weak self] in
+            self?.menuColletionView.reloadData()
+        }
         configUser = viewModel.config
         headerView.show(viewModel.config)
-        listMenu = viewModel.menus
-        menuColletionView.reloadData()
     }
 }

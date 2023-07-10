@@ -1,7 +1,7 @@
 import Foundation
 
 final class APIService: AuthUserProtocol {
-    func show(completion: @escaping (APIResponseAuth?) -> Void) {
+    func show(completion: @escaping(Result<APIResponseAuth, Error>) -> Void) {
         let matricula = "1091"
         let senha = "11111111"
         let token = "X"
@@ -11,7 +11,7 @@ final class APIService: AuthUserProtocol {
         let urlString = "\(baseUrl)?matricula=\(matricula)&senha=\(senha)&token=\(token)&so=\(so)"
 
         guard let url = URL(string: urlString) else {
-            completion(nil)
+            completion(.failure(NSError(domain: "", code: 0, userInfo: nil)))
             return
         }
 
@@ -23,13 +23,13 @@ final class APIService: AuthUserProtocol {
                 do {
                     let decoder = JSONDecoder()
                     let response = try decoder.decode(APIResponseAuth.self, from: data)
-                    completion(response)
+                    completion(.success(response))
                 } catch {
                     print("Erro ao decodificar os dados da resposta: \(error.localizedDescription)")
-                    completion(nil)
+                    completion(.failure(NSError(domain: "", code: 0, userInfo: nil)))
                 }
             } else {
-                completion(nil)
+                completion(.failure(NSError(domain: "", code: 0, userInfo: nil)))
             }
         }
 

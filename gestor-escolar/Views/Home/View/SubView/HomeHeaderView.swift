@@ -93,8 +93,10 @@ final class HomeHeaderView: UIView {
 
 extension HomeHeaderView: HomeHeaderViewProtocol {
     func show(_ viewModel: HomeConfigViewModel) {
-        imageView.image = UIImage(named: "imagenslogotipo.png")
-        titleLabel.text = viewModel.nameScholl
-        subTitleLabel.text = viewModel.nameUser
+        DispatchQueue.main.async {
+            self.imageView.image = UIImage(named: "imagenslogotipo.png")
+            self.titleLabel.text = viewModel.nameScholl
+            self.subTitleLabel.text = viewModel.nameUser
+        }
     }
 }

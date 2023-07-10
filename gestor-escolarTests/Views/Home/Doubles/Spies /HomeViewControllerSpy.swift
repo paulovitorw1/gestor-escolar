@@ -2,8 +2,7 @@ import UIKit
 
 @testable import gestor_escolar
 
-final class HomeViewSpy: UIView, HomeViewProtocol {
-    var didTappedMenu: ((HomeConfigViewModel?) -> Void)?
+final class HomeViewControllerSpy: UIViewController, HomeViewControllerProtocol {
 
     private(set) var showCount: Int = 0
     private(set) var receivedViewModel: HomeViewModel?

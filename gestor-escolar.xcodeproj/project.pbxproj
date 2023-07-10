@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6493A012A5A6E120061F7DD /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6493A002A5A6E120061F7DD /* HomePresenterTests.swift */; };
+		A6493A042A5A6EB20061F7DD /* HomeViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6493A032A5A6EB20061F7DD /* HomeViewControllerSpy.swift */; };
+		A6493A062A5A70640061F7DD /* MockAuthUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6493A052A5A70640061F7DD /* MockAuthUserService.swift */; };
 		A681F95C2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681F95B2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift */; };
 		A689E33E2A55DF5E006BF123 /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E33D2A55DF5E006BF123 /* HomeViewTests.swift */; };
 		A689E3412A55E002006BF123 /* HomeViewModel+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689E3402A55E002006BF123 /* HomeViewModel+Stub.swift */; };
@@ -37,6 +40,7 @@
 		A69E0F972A53C27000EED1B7 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = A69E0F962A53C27000EED1B7 /* Quick */; };
 		A69E0F9A2A53C28700EED1B7 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = A69E0F992A53C28700EED1B7 /* Nimble */; };
 		A69E0FA02A53C41100EED1B7 /* HomeHeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E0F9F2A53C41100EED1B7 /* HomeHeaderViewTests.swift */; };
+		A6AD1FC92A5C4A0C00EA6067 /* APIResponseAuth+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD1FC82A5C4A0C00EA6067 /* APIResponseAuth+Stub.swift */; };
 		A6B3151A2A4CC1EF000FB3A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */; };
 		A6B3151C2A4CC1EF000FB3A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */; };
 		A6B315232A4CC1F0000FB3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B315222A4CC1F0000FB3A3 /* Assets.xcassets */; };
@@ -88,6 +92,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6493A002A5A6E120061F7DD /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		A6493A032A5A6EB20061F7DD /* HomeViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerSpy.swift; sourceTree = "<group>"; };
+		A6493A052A5A70640061F7DD /* MockAuthUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthUserService.swift; sourceTree = "<group>"; };
 		A681F95B2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeConfigViewModel+Stub.swift"; sourceTree = "<group>"; };
 		A689E33D2A55DF5E006BF123 /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
 		A689E3402A55E002006BF123 /* HomeViewModel+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+Stub.swift"; sourceTree = "<group>"; };
@@ -116,6 +123,7 @@
 		A69E0F822A537F1E00EED1B7 /* ProgramContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentService.swift; sourceTree = "<group>"; };
 		A69E0F842A5382AE00EED1B7 /* ProgramContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramContentModel.swift; sourceTree = "<group>"; };
 		A69E0F9F2A53C41100EED1B7 /* HomeHeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderViewTests.swift; sourceTree = "<group>"; };
+		A6AD1FC82A5C4A0C00EA6067 /* APIResponseAuth+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIResponseAuth+Stub.swift"; sourceTree = "<group>"; };
 		A6B315162A4CC1EF000FB3A3 /* gestor-escolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gestor-escolar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B315192A4CC1EF000FB3A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6B3151B2A4CC1EF000FB3A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +204,7 @@
 				A681F95B2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift */,
 				A689E3452A55E66B006BF123 /* HomeMenuViewModel+Stub.swift */,
 				A689E3402A55E002006BF123 /* HomeViewModel+Stub.swift */,
+				A6AD1FC82A5C4A0C00EA6067 /* APIResponseAuth+Stub.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -214,6 +223,7 @@
 				A689E34E2A55ED7F006BF123 /* HomePresenterSpy.swift */,
 				A689E3532A570380006BF123 /* HomeViewControllerDelegateSpy.swift */,
 				A689E3552A570504006BF123 /* HomeViewSpy.swift */,
+				A6493A032A5A6EB20061F7DD /* HomeViewControllerSpy.swift */,
 			);
 			path = "Spies ";
 			sourceTree = "<group>";
@@ -221,6 +231,7 @@
 		A689E34D2A55ED74006BF123 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				A6493A052A5A70640061F7DD /* MockAuthUserService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -355,6 +366,7 @@
 				A681F95A2A545FBA003F09E8 /* Doubles */,
 				A69E0F9D2A53C31B00EED1B7 /* View */,
 				A689E3472A55EA68006BF123 /* HomeViewControllerTests.swift */,
+				A6493A002A5A6E120061F7DD /* HomePresenterTests.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -817,12 +829,16 @@
 			files = (
 				A689E3562A570504006BF123 /* HomeViewSpy.swift in Sources */,
 				A689E34F2A55ED80006BF123 /* HomePresenterSpy.swift in Sources */,
+				A6493A042A5A6EB20061F7DD /* HomeViewControllerSpy.swift in Sources */,
 				A689E3412A55E002006BF123 /* HomeViewModel+Stub.swift in Sources */,
 				A69E0FA02A53C41100EED1B7 /* HomeHeaderViewTests.swift in Sources */,
 				A689E3542A570380006BF123 /* HomeViewControllerDelegateSpy.swift in Sources */,
 				A689E33E2A55DF5E006BF123 /* HomeViewTests.swift in Sources */,
 				A689E3442A55E5AD006BF123 /* MenuCollectionViewCellTests.swift in Sources */,
+				A6493A012A5A6E120061F7DD /* HomePresenterTests.swift in Sources */,
 				A689E3482A55EA68006BF123 /* HomeViewControllerTests.swift in Sources */,
+				A6493A062A5A70640061F7DD /* MockAuthUserService.swift in Sources */,
+				A6AD1FC92A5C4A0C00EA6067 /* APIResponseAuth+Stub.swift in Sources */,
 				A689E3462A55E66B006BF123 /* HomeMenuViewModel+Stub.swift in Sources */,
 				A681F95C2A54600F003F09E8 /* HomeConfigViewModel+Stub.swift in Sources */,
 			);

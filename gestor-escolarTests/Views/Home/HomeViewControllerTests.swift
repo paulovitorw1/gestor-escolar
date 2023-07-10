@@ -20,13 +20,15 @@ final class HomeViewControllerTests: QuickSpec {
             sut.delegate = delegateSpy
         }
 
-        describe("#viewDidLoad") {
+        describe("#loadView") {
             context("when calling #viewDidLoad()") {
                 it("should instantiate the view of type HomeView") {
                     expect(sut.view).to(beAKindOf(HomeViewProtocol.self))
                 }
             }
+        }
 
+        describe("#viewDidLoad") {
             context("when calling #fetchData()") {
                 beforeEach {
                     presenterMock.fetchData()

@@ -3,7 +3,7 @@ import Foundation
 @testable import gestor_escolar
 
 extension HomeConfigViewModel {
-    static func stub(date: String = "16/10/2020",
+    static func stub(date: String = "16/10/2000",
                      nameUser: String = "Paulo Vitor",
                      logo: String = "imagenslogotipo.png",
                      nameScholl: String = "name school",

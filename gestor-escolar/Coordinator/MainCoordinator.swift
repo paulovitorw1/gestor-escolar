@@ -8,7 +8,8 @@ class MainCoordinator: CoordinatorProtocol {
     }
 
     func start() {
-        let presenter = HomePresenter()
+        let service = APIService()
+        let presenter = HomePresenter(apiService: service)
         let controller = HomeViewController(presenter: presenter)
         controller.delegate = self
         presenter.controller = controller
